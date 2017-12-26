@@ -104,9 +104,10 @@
     button.clipsToBounds = YES;
   }
   
-  [self.topPortraitCloseButton addTarget:self action:@selector(doneButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
-  
-  self.playerControlsAutoHideTime = @5;
+    [self.topPortraitCloseButton addTarget:self action:@selector(doneButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.playerControlsAutoHideTime = @5;
+    self.isControlsHidden = YES;
 }
 
 - (id)initWithFrame:(CGRect)frame {
@@ -310,9 +311,11 @@
 
 - (IBAction)handleSwipeRight:(id)sender {
   [self.delegate previousTrackBySwipe];
+
 }
 
 - (void)setControlHideCountdown:(NSInteger)controlHideCountdown {
+    NSLog(@"Controls: B= %@", @(controlHideCountdown));
   if (controlHideCountdown == 0) {
     [self setControlsHidden:YES];
   } else {
@@ -322,6 +325,7 @@
 }
 
 - (void)hideControlsIfNecessary {
+    NSLog(@"Controls: hide= %@ count = %@", @(self.isControlsHidden) , @(_controlHideCountdown));
   if (self.isControlsHidden) return;
   if (self.controlHideCountdown == -1) {
     [self setControlsHidden:NO];
@@ -333,8 +337,9 @@
 }
 
 - (void)setControlsHidden:(BOOL)hidden {
+
     
-//  DDLogVerbose(@"Controls: %@", hidden ? @"hidden" : @"visible");
+  NSLog(@"Controls: %@", hidden ? @"hidden" : @"visible");
 //    NSLog(@"Controls: %@", self.topControlOverlay.hidden ? @"hidden" : @"visible");
   if (self.isControlsHidden != hidden) {
     self.isControlsHidden = hidden;
@@ -369,7 +374,7 @@
 - (void)layoutForOrientation:(UIInterfaceOrientation)interfaceOrientation {
   if (UIInterfaceOrientationIsPortrait(interfaceOrientation)) {
     self.topControlOverlay.hidden = YES;
-    self.topPortraitControlOverlay.hidden = NO;
+    self.topPortraitControlOverlay.hidden = YES;
     
     [self.buttonPlaceHolderView setFrameOriginY:PADDING/2];
     self.buttonPlaceHolderView.hidden = YES;
@@ -388,7 +393,7 @@
     
   } else {
     [self.topControlOverlay setFrameOriginY:0.0f];
-    self.topControlOverlay.hidden = NO;
+    self.topControlOverlay.hidden = YES;
     self.topPortraitControlOverlay.hidden = YES;
     
     [self.buttonPlaceHolderView setFrameOriginY:PADDING/2 + CGRectGetMaxY(self.topControlOverlay.frame)];

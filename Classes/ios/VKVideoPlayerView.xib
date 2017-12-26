@@ -113,7 +113,7 @@ Your video will resume shortly.</string>
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
                     <subviews>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="92" userLabel="Button Panel">
@@ -121,7 +121,7 @@ Your video will resume shortly.</string>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xtv-gf-Qvy">
+                        <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xtv-gf-Qvy">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -337,9 +337,9 @@ Your video will resume shortly.</string>
         <image name="VKVideoPlayer_cross.png" width="17" height="17"/>
         <image name="VKVideoPlayer_next.png" width="21" height="21"/>
         <image name="VKVideoPlayer_pause.png" width="17" height="17"/>
-        <image name="VKVideoPlayer_pause_big.png" width="74" height="74"/>
+        <image name="VKVideoPlayer_pause_big.png" width="48" height="48"/>
         <image name="VKVideoPlayer_play.png" width="17" height="17"/>
-        <image name="VKVideoPlayer_play_big.png" width="74" height="74"/>
+        <image name="VKVideoPlayer_play_big.png" width="48" height="48"/>
         <image name="VKVideoPlayer_rewind.png" width="27" height="21"/>
         <image name="VKVideoPlayer_zoom_in.png" width="16" height="16"/>
         <image name="VKVideoPlayer_zoom_out.png" width="16" height="16"/>
