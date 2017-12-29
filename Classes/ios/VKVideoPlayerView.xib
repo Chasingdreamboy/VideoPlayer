@@ -197,10 +197,10 @@ Your video will resume shortly.</string>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3">
-                            <rect key="frame" x="0.0" y="144" width="320" height="36"/>
+                            <rect key="frame" x="0.0" y="140" width="320" height="40"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17">
-                                    <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="17" secondAttribute="height" multiplier="1:1" id="75V-hh-TDe"/>
                                     </constraints>
@@ -217,20 +217,8 @@ Your video will resume shortly.</string>
                                         <action selector="playButtonTapped:" destination="-1" eventType="touchUpInside" id="30"/>
                                     </connections>
                                 </button>
-                                <slider opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="18" customClass="VKScrubber">
-                                    <rect key="frame" x="79" y="8" width="162" height="21"/>
-                                </slider>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19">
-                                    <rect key="frame" x="244" y="0.0" width="40" height="36"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="40" id="9aD-yE-bX1"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
-                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83">
-                                    <rect key="frame" x="36" y="0.0" width="40" height="36"/>
+                                    <rect key="frame" x="15" y="0.0" width="40" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="40" id="N5s-PQ-ePe"/>
                                     </constraints>
@@ -238,8 +226,20 @@ Your video will resume shortly.</string>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <slider opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="18" customClass="VKScrubber">
+                                    <rect key="frame" x="58" y="8" width="179" height="25"/>
+                                </slider>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19">
+                                    <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="9aD-yE-bX1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qd-b3-byZ">
-                                    <rect key="frame" x="284" y="0.0" width="36" height="36"/>
+                                    <rect key="frame" x="280" y="0.0" width="40" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="5Qd-b3-byZ" secondAttribute="height" id="uN9-yj-t2p"/>
                                     </constraints>
@@ -257,10 +257,11 @@ Your video will resume shortly.</string>
                                 <constraint firstAttribute="bottom" secondItem="18" secondAttribute="bottom" constant="8" id="02C-0x-vHA"/>
                                 <constraint firstItem="5Qd-b3-byZ" firstAttribute="leading" secondItem="19" secondAttribute="trailing" id="11D-Ya-mtC"/>
                                 <constraint firstAttribute="bottom" secondItem="5Qd-b3-byZ" secondAttribute="bottom" id="5iM-1Z-qTg"/>
-                                <constraint firstItem="83" firstAttribute="leading" secondItem="17" secondAttribute="trailing" id="6CW-pZ-FYG"/>
                                 <constraint firstItem="18" firstAttribute="leading" secondItem="83" secondAttribute="trailing" constant="5" id="DNj-iN-TIA"/>
                                 <constraint firstItem="17" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="FKo-Df-y67"/>
                                 <constraint firstAttribute="bottom" secondItem="17" secondAttribute="bottom" id="GwB-6Y-CbD"/>
+                                <constraint firstItem="83" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="15" id="PpR-tk-Hg3"/>
+                                <constraint firstAttribute="height" constant="40" id="SvU-Hq-efs"/>
                                 <constraint firstItem="5Qd-b3-byZ" firstAttribute="top" secondItem="3" secondAttribute="top" id="UB6-jg-Szz"/>
                                 <constraint firstItem="17" firstAttribute="top" secondItem="3" secondAttribute="top" id="YEZ-08-V34"/>
                                 <constraint firstItem="19" firstAttribute="top" secondItem="3" secondAttribute="top" id="bPR-M9-pxh"/>
@@ -295,7 +296,6 @@ Your video will resume shortly.</string>
                         <constraint firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="OQI-UY-WB3"/>
                         <constraint firstItem="169-ch-vv0" firstAttribute="width" secondItem="31" secondAttribute="width" multiplier="0.12" id="Sm5-dB-B5O"/>
                         <constraint firstItem="169-ch-vv0" firstAttribute="centerY" secondItem="31" secondAttribute="centerY" id="Sm8-J2-5du"/>
-                        <constraint firstItem="3" firstAttribute="height" secondItem="31" secondAttribute="height" multiplier="0.2" id="lQt-PD-Kta"/>
                     </constraints>
                 </view>
                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="54">
