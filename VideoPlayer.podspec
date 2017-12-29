@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
   
   s.authors            = { 
-  "Ericey" => "15290411649@163.com"
+  "Ericy" => "15290411649@163.com"
   }
 
   s.platform     = :ios, "8.0"
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'DTCoreText', '~> 1.6.11'
   s.dependency 'CocoaLumberjack', '~> 1.7.0'
-  #s.dependency 'VKFoundation', '0.1.1'
-   s.dependency 'VKFoundation', :git => "https://github.com/Chasingdreamboy/VKFoundation.git"
+  s.dependency 'VKFoundation', '0.1.1'
+
 
 end
