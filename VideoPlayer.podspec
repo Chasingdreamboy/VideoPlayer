@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "VideoPlayer"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "VKVideoPlayer is customizable video player component that is able to play mp4, hls videos and display subtitles."
 
   s.description  = <<-DESC
@@ -42,6 +42,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'DTCoreText', '~> 1.6.11'
   s.dependency 'CocoaLumberjack', '~> 1.7.0'
-  s.dependency 'VKFoundation', '0.1.1'
+  #s.dependency 'VKFoundation', '0.1.1'
+   s.dependency 'VKFoundation', :git => "https://github.com/Chasingdreamboy/VKFoundation.git"
 
 end
